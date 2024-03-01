@@ -4,11 +4,11 @@ import dotenv from "dotenv"
 // import { DB_NAME } from "./constants";
 import connectDb from "./db/index.js";
 import {app} from './app.js'
+var cors = require('cors')
 
 
 
-
-
+app.use(cors())
 
 dotenv.config({
     path:"./.env"
