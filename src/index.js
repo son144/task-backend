@@ -6,9 +6,14 @@ import connectDb from "./db/index.js";
 import {app} from './app.js'
 import cors from "cors"
 
+const corsOptions = {
+  origin: 'http://localhost:3000',  
+  methods: ['GET', 'POST', 'PUT', 'DELETE'], 
+  credentials: true            
+};
 
 
-app.use(cors())
+app.use(cors(corsOptions));
 
 dotenv.config({
     path:"./.env"
