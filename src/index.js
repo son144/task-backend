@@ -7,7 +7,7 @@ import {app} from './app.js'
 import cors from "cors"
 
 const corsOptions = {
-  origin: ['https://task-backend-2-m837.onrender.com', 'http://localhost:3000'],
+  origin:'*',
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   credentials: true
 };
